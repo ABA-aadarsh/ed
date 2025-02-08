@@ -14,3 +14,7 @@ v0. features:
 5. git status trees
 6. file tree
 7. fast as it gets
+
+
+- [remaining] command-box implementation
+- [remaining] command-box suggestions

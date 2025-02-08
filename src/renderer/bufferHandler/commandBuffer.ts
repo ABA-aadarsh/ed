@@ -13,11 +13,14 @@ class CommandBuffer {
         if(position == -1){
             // remove char behnid cursor -> backspace event
             this.command = this.command.slice(0, this.cursorPosition - 1) + this.command.slice(this.cursorPosition + 1)
-            this.cursorPosition -= 1
+            this.cursorPosition = Math.max(0, this.cursorPosition-1)
         }
     }
     public get _buffer() : string {
         return this.command
+    }
+    public get _cursorPosition() : number {
+        return this.cursorPosition
     }
     
 }
